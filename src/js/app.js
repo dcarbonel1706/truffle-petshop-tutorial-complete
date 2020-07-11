@@ -29,8 +29,9 @@ App = {
       App.web3Provider = web3.currentProvider;
     } else {
       // If no injected web3 instance is detected, fall back to Ganache
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+      App.web3Provider = new Web3.providers.HttpProvider('https://sandbox.truffleteams.com/69a8e39c-caaf-4f4d-9c1e-15f91de9c3a7ddd');
     }
+    
     web3 = new Web3(App.web3Provider);
 
     return App.initContract();
